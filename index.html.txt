@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRATO | Italian Comfort Food</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#fafafa;color:#222}
+header{background:#111;color:#fff;padding:40px 20px;text-align:center}
+h1{margin:0;font-size:42px;letter-spacing:2px}
+.tag{margin-top:10px;font-size:16px;opacity:.8}
+.section{padding:50px 20px;max-width:900px;margin:auto}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.08)}
+.card h3{margin-top:0}
+.price{font-weight:bold;margin-top:10px}
+.order{background:#f1f1f1;padding:40px 20px;border-radius:10px}
+input,textarea,select{width:100%;padding:12px;margin-top:8px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px}
+button{background:#111;color:#fff;border:none;padding:14px 20px;border-radius:6px;font-size:16px;cursor:pointer}
+button:hover{opacity:.9}
+footer{text-align:center;padding:30px;font-size:14px;opacity:.7}
+</style>
+</head>
+<body>
+
+<header>
+<h1>STRATO</h1>
+<div class="tag">Italian comfort food · Small batches · Amsterdam</div>
+</header>
+
+<section class="section">
+<h2>Weekly Menu</h2>
+<div class="menu">
+<div class="card">
+<h3>Tiramisù Classico</h3>
+<p>Mascarpone cream, espresso, savoiardi, cocoa.</p>
+<div class="price">€7</div>
+</div>
+
+<div class="card">
+<h3>Tiramisù Pistachio</h3>
+<p>Mascarpone cream, pistachio cream, savoiardi.</p>
+<div class="price">€8</div>
+</div>
+
+<div class="card">
+<h3>Lasagna</h3>
+<p>Traditional ragù, béchamel, parmesan.</p>
+<div class="price">€10</div>
+</div>
+
+<div class="card">
+<h3>Parmigiana</h3>
+<p>Eggplant, tomato sauce, mozzarella, parmesan.</p>
+<div class="price">€9</div>
+</div>
+</div>
+</section>
+
+<section class="section order">
+<h2>Pre‑Order</h2>
+<p>Orders close Thursday. Pickup Saturday in Amsterdam.</p>
+
+<form action="https://formspree.io/f/yourformid" method="POST">
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Product</label>
+<select name="product">
+<option>Tiramisù Classico</option>
+<option>Tiramisù Pistachio</option>
+<option>Lasagna</option>
+<option>Parmigiana</option>
+</select>
+
+<label>Quantity</label>
+<input type="number" name="quantity" min="1" required>
+
+<label>Notes</label>
+<textarea name="notes"></textarea>
+
+<button type="submit">Place Order</button>
+</form>
+</section>
+
+<section class="section">
+<h2>Contact</h2>
+<p>Email: hello@stratofood.com</p>
+<p>Instagram: @strato.amsterdam</p>
+</section>
+
+<footer>
+STRATO · Small batch Italian food · Amsterdam
+</footer>
+
+</body>
+</html>
